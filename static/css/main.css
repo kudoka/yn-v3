@@ -1,0 +1,67 @@
+body  { font-family:Verdana, Geneva, sans-serif; font-size:12pt; color:black; }
+a:link { text-decoration:none; color:royalblue; }
+/* cannot use a:visited to change color as all the links are #, hence gets updated at once. */
+/* instead, use this custom class for controling the color. */
+a.backtotop { text-decoration: none; padding: 8px 6px; color: royalblue; }
+a.topic { font-size: 18px; color: #000000; }
+a.visited { text-decoration: none; color: #828282; }
+a:hover { text-decoration: underline; }
+a:active { text-decoration: underline; }
+.tabbar {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #ff6600;
+}
+.tabbar button {
+    background-color: inherit;
+    float: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 6px 5px ;
+    transition: 0.3s;
+    font-size: 14px;
+    color: #000000;
+}
+.tabbar button:hover { color: dimgrey; }
+.tabbar button.active { color: white; }
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #f6f6ef; /* hn */
+}
+ul { list-style-type: none; padding: 0; /*border: 1px solid #ddd;*/ } /*margin ?*/
+ul li { padding: 4px 4px; }
+ul li:last-child { border-bottom: none }
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #ff6600;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 1s linear infinite;
+    /* Safari */
+    animation: spin 1s linear infinite;
+  }
+
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

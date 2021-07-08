@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <%- include ("../partial/header.ejs") %>
+</head>
+
+<body>
+    <!-- <h2>Tabs</h2>
+    <p>Click on the buttons inside the tabbed menu:</p> -->
+
+    <div class="tabbar">
+        <button id="top-picks" class="tab">主要</button>
+        <button id="domestic" class="tab">国内</button>
+        <button id="world" class="tab">国際</button>
+        <button id="business" class="tab">経済</button>
+        <button id="entertainment" class="tab">芸能</button>
+        <button id="sports" class="tab">スポーツ</button>
+        <button id="it" class="tab">IT</button>
+        <button id="science" class="tab">科学</button>
+        <button id="local" class="tab">地域</button>
+    </div>
+
+    <div id="top-picks-content" class="tabcontent"></div>
+
+    <div id="domestic-content" class="tabcontent"></div>
+
+    <div id="world-content" class="tabcontent"></div>
+
+    <div id="business-content" class="tabcontent"></div>
+
+    <div id="entertainment-content" class="tabcontent"></div>
+
+    <div id="sports-content" class="tabcontent"></div>
+
+    <div id="it-content" class="tabcontent"></div>
+
+    <div id="science-content" class="tabcontent"></div>
+
+    <div id="local-content" class="tabcontent"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type='module' src="js/y-news.js"></script>
+
+</body>
+
+</html>
